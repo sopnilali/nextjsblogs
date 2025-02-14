@@ -15,4 +15,4 @@ export const cors =
 
             // Call the actual handler
             return handler(req, res);
-        };
+};
