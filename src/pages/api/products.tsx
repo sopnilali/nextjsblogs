@@ -1,8 +1,9 @@
 import dbConnect from '@/lib/dbConnect';
+import { cors } from '@/middleware/cors';
 import { ProductSrvices } from '@/modules/product/product.service';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+const handler = async(req: NextApiRequest, res: NextApiResponse) => {
 
   // Handle preflight requests (OPTIONS)
   if (req.method === 'OPTIONS') {
@@ -48,3 +49,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(405).json({ success: false, message: 'Method not allowed' });
   }
 }
+
+export default cors(handler);
