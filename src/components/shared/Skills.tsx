@@ -7,7 +7,7 @@ import SectionTitle from './SectionTitle';
 const skills = [
     { name: 'HTML', level: 90, icon: <FaHtml5 size={40} className="text-orange-500" /> },
     { name: 'CSS', level: 90, icon: <FaCss3Alt size={40} className="text-blue-500" /> },
-    { name: 'JavaScript', level: 80, icon: <FaJsSquare size={40} className="text-yellow-500" /> },
+    { name: 'JavaScripts', level: 80, icon: <FaJsSquare size={40} className="text-yellow-500" /> },
     { name: 'React', level: 90, icon: <FaReact size={40} className="text-cyan-400" /> },
     { name: 'Node.js', level: 80, icon: <SiNodedotjs size={40} className="text-green-500" /> },
     { name: 'Typescript', level: 75, icon: <SiTypescript size={40} className="text-blue-800" /> },
